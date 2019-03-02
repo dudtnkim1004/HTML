@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS와 애니메이션</title>
+	<style>
+		.container{
+			width:500px;
+			margin:50px auto;
+		}
+		.photo{
+			border:1px solid #ccc;
+		}
+		.photo:hover{
+			border:1px solid black;
+			border-radius: 10px;
+			-moz-transform: rotate(50deg);
+			-ms-transform: rotate(50deg);
+			-o-transform:rotate(50deg);
+			-webkit-transform:rotate(50deg);
+			transform:rotate(50deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="https://static01.nyt.com/images/2018/07/16/well/voices-heart-broken/voices-heart-broken-articleLarge.jpg?quality=75&auto=webp&disable=upscale" class="photo">
+	</div>
+</body>
+</html>

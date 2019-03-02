@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS와 애니메이션</title>
+	<style>
+		.photo{
+			margin-top:50px;
+			margin-left:100px;
+		}
+		.photo:hover{
+			-webkit-transform-origin: left top;
+			-moz-transform-origin: left top;
+			-ms-transform-origin: left top;
+			-o-transform-origin: left top;
+			transform-origin: left top;
+			
+			-webkit-transform:scale(1.5);
+			-moz-transform: scale(1.5);
+			-ms-transform: scale(1.5);
+			-o-transform: scale(1.5);
+			transform: scale(1.5);
+			
+			-webkit-transition:all 0.5s;
+			-moz-transition:all 0.5s;
+			-o-transition:all 0.5s;
+			transition:all 0.5s;
+			box-shadow: 5px 5px 3px black;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://tokenpost.kr/assets/uploads/201808309590a5402082c3927.jpg" width="400" height="200" class="photo">
+</body>
+</html>
